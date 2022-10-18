@@ -12,6 +12,8 @@ const connect = function () {
 
   conn.on('connect', () => {
     console.log('you ded cuz you idled');
+
+    conn.write('Name: SNK');
   });
 
   return conn;
