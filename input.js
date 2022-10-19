@@ -4,7 +4,9 @@ const movementCommand = {
   w: 'Move: up',
   a: 'Move: left',
   s: 'Move: down',
-  d: 'Move: right'
+  d: 'Move: right',
+  e: 'Say: Hi',
+  r: 'Say: Ssss'
 };
 
 const setupInput = (conn) => {
