@@ -1,6 +1,6 @@
 let connection;
 
-//userInputmovements
+//userInputmovements with Say messages
 const movementCommand = {
   w: 'Move: up',
   a: 'Move: left',
@@ -30,7 +30,6 @@ const handleUserInput = (key) => {
     console.log(movementCommand[key]);
     connection.write(movementCommand[key]);
   }
-
 
 };
 

@@ -13,7 +13,7 @@ const connect = function() {
 
   conn.on('connect', () => {
     console.log('You are Connected, dear snake');
-    conn.write('Name: SNK');
+    conn.write('Name: AM');
   });
 
   return conn;
