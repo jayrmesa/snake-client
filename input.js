@@ -1,6 +1,7 @@
 let connection;
 
-const movementCommand = { 
+//userInputmovements
+const movementCommand = {
   w: 'Move: up',
   a: 'Move: left',
   s: 'Move: down',
@@ -17,12 +18,12 @@ const setupInput = (conn) => {
   stdin.on('data', handleUserInput);
   connection = conn;
   return stdin;
-}
+};
 
 const handleUserInput = (key) => {
-  if (key === '\u0003') { // When the user Ctrl + C to exits
+  if (key === '\u0003') { // When the user Ctrl + C to exit
     console.log('Connection Terminated, user quit');
-    return process.exit();;
+    return process.exit();
   }
 
   if (movementCommand[key]) {
@@ -31,6 +32,6 @@ const handleUserInput = (key) => {
   }
 
 
-}
+};
 
-module.exports = { setupInput }
+module.exports = { setupInput };
